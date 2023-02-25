@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/background-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1300px;
+}
+
+/*#region Header*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.header__text {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.header__text-time {
+  display: block;
+  text-align: center;
+}
+/*#endregion Header*/
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideBlock {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*#region List Videos*/
+
+.list-videos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item-video {
+  opacity: 0;
+  position: relative;
+  width: 283.57px;
+  height: 275px;
+  margin-bottom: 50px;
+}
+
+.item-video-show {
+  animation: showBlock 1s linear forwards;
+}
+
+.item-video-hide {
+  animation: hideBlock 1s linear forwards;
+}
+
+.item-video__video {
+  border-radius: 300px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item-video__price {
+  position: absolute;
+  left: 67.36%;
+  right: 0%;
+  top: 75.64%;
+  bottom: 9.82%;
+  margin: 0;
+  padding: 10px 23px;
+  background: #fff500;
+  border-radius: 7px;
+  transform: skewX(160deg);
+}
+
+.item-video__price-text {
+  display: inline-block;
+  transform: skewX(-160deg);
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/*#endregion List Videos*/
+
+/*#region Footer*/
+.footer {
+  display: flex;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+/*#endregion Footer*/
