@@ -278,8 +278,10 @@
   const intervalDelay = 15000;
   const startAnimation = 200;
   const endAnimation = 14000;
+  const numberVideosOnPage = 7; //кол-во видео на странице
+
   let startIndex = 0;
-  let endIndex = 7;
+  let endIndex = numberVideosOnPage;
 
   start();
 
@@ -321,17 +323,17 @@
       endIndex = attractions.length;
     }
     for (let i = startIndex; i < endIndex; i++) {
-      if (attractions.length - 1 === i && countVideo != 7) {
+      if (attractions.length - 1 === i && countVideo != numberVideosOnPage) {
         const attraction = attractions[i];
         countVideo++;
         createItemListVideos(attraction);
 
         startIndex = 0;
         i = -1;
-        endIndex = 7 - countVideo;
+        endIndex = numberVideosOnPage - countVideo;
 
-        if (countVideo === 7) {
-          endIndex = 7;
+        if (countVideo === numberVideosOnPage) {
+          endIndex = numberVideosOnPage;
           return;
         }
       } else {
@@ -341,7 +343,7 @@
       }
     }
     startIndex = endIndex;
-    endIndex += 7;
+    endIndex += numberVideosOnPage;
   }
 
   function start() {
