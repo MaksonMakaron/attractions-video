@@ -5,7 +5,7 @@
       description: 'Полюбуйтесь Олимпийским парком, Черным морем и горными вершинами с 60-метровой высоты!',
       tag: '#семейный',
       price: '700',
-      video: 'e55ac702bbe26ede5fb23a2d6af24f90.webm',
+      video: 'e55ac702bbe26ede5fb23a2d6af24f90.mp4',
       img: '975d79a13ab942c941bf86ab136292a4.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 110 см' },
@@ -31,7 +31,7 @@
       description: 'Путешествие на сказочном экспрессе для всей семьи!',
       tag: '#семейный',
       price: '600',
-      video: 'ba30bca898a87ba4f7b629b4779841fe.webm',
+      video: 'ba30bca898a87ba4f7b629b4779841fe.mp4',
       img: '10ad66360301707350cfb7fd9acce62c.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 100 см' },
@@ -44,7 +44,7 @@
       description: 'Семейная горка позволит разделить незабываемые эмоции с самыми дорогими людьми',
       tag: '#экстремальный',
       price: '600',
-      video: '1fb759c2f9239fa0a5a8109c242a2f82.webm',
+      video: '1fb759c2f9239fa0a5a8109c242a2f82.mp4',
       img: '20b0194cd807929db05c7417226da4bc.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 130 см' },
@@ -57,7 +57,7 @@
       description: 'Гигантские качели поднимают пассажиров на 18-метровую высоту',
       tag: '#экстремальный',
       price: '500',
-      video: '428969ebf640e53cb6f65c911a33478d.webm',
+      video: '428969ebf640e53cb6f65c911a33478d.mp4',
       img: '72afbd22130e989e943ee87e4a99c8e4.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 100 см' },
@@ -80,10 +80,10 @@
     },
     {
       title: 'Конек-Горбунок',
-      description: 'Классическая карусель с бегающими по кругу лошадками для самых маленьких',
+      description: 'Настоящий морской бой и увлекательное приключение на воде для всей семьи! ',
       tag: '#детский',
       price: '600',
-      video: '8f27a2ec7db7c8f9e09fb9da9065ff90.webm',
+      video: '8f27a2ec7db7c8f9e09fb9da9065ff90.mp4',
       img: '761a39070d3ef05bdaec82e43879b561.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 90 см' },
@@ -109,7 +109,7 @@
       description: 'Увлекательный водный аттракцион для самых маленьких!',
       tag: '#детский',
       price: '700',
-      video: '31f2ce1dd86e869f94de350afebd7575.webm',
+      video: '31f2ce1dd86e869f94de350afebd7575.mp4',
       img: '9757a764891df5f847de4897b9fd150a.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 150 см' },
@@ -148,7 +148,7 @@
       description: 'Наш чистый-чистый аттракцион дарит хорошее настроение каждому маленькому гостю парка',
       tag: '#детский',
       price: '600',
-      video: '9dc3ec7447ff3695e2d6446fce44122c.webm',
+      video: '9dc3ec7447ff3695e2d6446fce44122c.mp4',
       img: 'a969edcaa29cf78c6970a1917b4c7507.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 120 см' },
@@ -187,7 +187,7 @@
       description: 'Ощутите дух захватывающего гоночного соревнования всей семьей!',
       tag: '#экстремальный',
       price: '400',
-      video: '4c161557fc3d9a909372aacbfc8a198d.webm',
+      video: '4c161557fc3d9a909372aacbfc8a198d.mp4',
       img: 'c3d60b8adb7860d61428f79ff6826fa7.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 110 см' },
@@ -226,7 +226,7 @@
       description: 'Уменьшенная версия башни свободного падения для самых маленьких!',
       tag: '#семейный',
       price: '600',
-      video: '42fa067c95a7c06a21cff397d2d98434.webm',
+      video: '42fa067c95a7c06a21cff397d2d98434.mp4',
       img: 'cf2adec8dd3a414b53bc4d81b8d19a1f.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 130 см' },
@@ -239,7 +239,7 @@
       description: 'Ничего не планируйте на вечер — сегодня вы приглашены на волшебное чаепитие!',
       tag: '#семейный',
       price: '800',
-      video: '48c170fdf5a086e1f8e3de3e39d07e73.webm',
+      video: '48c170fdf5a086e1f8e3de3e39d07e73.mp4',
       img: 'de37c19208ce07a42e8ca50f210cfd7a.png',
       icons: [
         { icon: 'height.svg', text: 'Минимальный рост 100 см' },
@@ -295,6 +295,7 @@
     videoEl.classList.add('item-video__video');
     videoEl.autoplay = true;
     videoEl.loop = true;
+    videoEl.muted = true;
 
     const priceBlockEl = document.createElement('div');
     priceBlockEl.classList.add('item-video__price');
